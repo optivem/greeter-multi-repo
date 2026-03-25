@@ -1,7 +1,7 @@
 services:
 
   frontend:
-    image: ghcr.io/optivem/atdd-accelerator-template-multi-repo-frontend/frontend:latest
+    image: ghcr.io/optivem/greeter-multi-repo-frontend/frontend:latest
     ports:
       - "8080:8080"
     depends_on:
@@ -10,7 +10,7 @@ services:
       - app-network
 
   backend:
-    image: ghcr.io/optivem/atdd-accelerator-template-multi-repo-backend/backend:latest
+    image: ghcr.io/optivem/greeter-multi-repo-backend/backend:latest
     ports:
       - "8081:8081"
     environment:

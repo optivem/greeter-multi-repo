@@ -39,8 +39,8 @@ jobs:
         with:
           tag: ${{ inputs.version }}
           base-image-urls: |
-            ghcr.io/${{ github.repository_owner }}/atdd-accelerator-template-multi-repo-frontend/frontend
-            ghcr.io/${{ github.repository_owner }}/atdd-accelerator-template-multi-repo-backend/backend
+            ghcr.io/${{ github.repository_owner }}/greeter-multi-repo-frontend/frontend
+            ghcr.io/${{ github.repository_owner }}/greeter-multi-repo-backend/backend
 
   deployment:
     needs: [check-release-exists, resolve-docker-images]

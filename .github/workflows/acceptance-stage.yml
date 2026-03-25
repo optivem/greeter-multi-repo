@@ -35,8 +35,8 @@ jobs:
       uses: optivem/find-latest-docker-images-action@v1
       with:
         image-urls: |
-          ghcr.io/${{ github.repository_owner }}/atdd-accelerator-template-multi-repo-frontend/frontend:latest
-          ghcr.io/${{ github.repository_owner }}/atdd-accelerator-template-multi-repo-backend/backend:latest
+          ghcr.io/${{ github.repository_owner }}/greeter-multi-repo-frontend/frontend:latest
+          ghcr.io/${{ github.repository_owner }}/greeter-multi-repo-backend/backend:latest
 
   should-run:
     needs: find-latest-images
