@@ -92,7 +92,7 @@ jobs:
           version: ${{ inputs.version }}
           artifact-urls: ${{ needs.check.outputs.image-urls }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
 
   summary:
     needs: [check, run]
