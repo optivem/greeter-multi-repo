@@ -141,7 +141,7 @@ jobs:
           target-version: ${{ steps.read-version.outputs.target-version }}
           image-urls: ${{ needs.check.outputs.image-digest-urls }}
         env:
-          GITHUB_TOKEN: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHCR_TOKEN }}
 
   summary:
     needs: [check, run]
